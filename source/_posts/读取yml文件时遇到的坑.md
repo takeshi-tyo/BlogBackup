@@ -25,6 +25,8 @@ protected String[] getInlinedProperties(MergedContextConfiguration config) {
 }
 ```
 
+
+
 2、使用@ConfigurationProperties方式读取yml文件中的属性时，prefix的值不能有大写，如：prefix = "myProps"， 这样写会报错，所以yml文件中的key一定要是小写。
 
 PS：我使用的是springboot 2.X版本，springboot 1.5以下版本貌似不存在此类问题！
