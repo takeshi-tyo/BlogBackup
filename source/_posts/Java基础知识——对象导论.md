@@ -26,7 +26,7 @@ title: Java基础知识——对象导论
 
 ## 1.2 每个对象都有一个接口
 
-![1568643825401](C:\Users\zhangyi39\AppData\Roaming\Typora\typora-user-images\1568643825401.png)
+![图片加载失败](https://raw.githubusercontent.com/takeshi-tyo/takeshi-tyo.github.io/master/assets/img/1568643825401.png)
 
 **接口**确定了对某一特定对象所能发出的请求。但是，在程序中必须有满足这些请求的代码，这些代码和隐藏的数据一起构成了**实现**。
 
@@ -70,7 +70,7 @@ Java用三个关键字控制访问：**public**，**private**，**protected**。
 
 ## 1.7 伴随多态的可互换对象
 
-![1569130247016](C:\Users\zhangyi39\AppData\Roaming\Typora\typora-user-images\1569130247016.png)
+![图像加载失败](https://raw.githubusercontent.com/takeshi-tyo/takeshi-tyo.github.io/master/assets/img/1569130247016.png)
 
 ```java
 void doSomething(Shape shape){

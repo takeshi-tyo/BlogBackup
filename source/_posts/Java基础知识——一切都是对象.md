@@ -1,5 +1,5 @@
 ---
-title: Java基础知识——一切都是对象
+title: Java基础知识--一切都是对象
 ---
 
 ## 2.1 用引用操作对象
@@ -128,10 +128,28 @@ ReturnType methodName(/* Argument list */){
 
 名字空间，即包名，包名加类名是一个类的唯一标识符，以防止和其他相同名字的类发生冲突。
 
-使用**import**关键字来导入你想要的类或者整个包。例如：
+使用**import**关键字来导入你想要的类。例如：
 
 ``` java
-import java.util.ArrayList;  //导入ArrayList这个类
-import java.util.*;  //导入util整个包
+import java.util.ArrayList;  //单类型导入
+import java.util.*;  //按需类型导入
 ```
+
+单类型导入与按需类型导入的区别请看另一篇博文[《Java import单类引入与包引入的区别》](https://takeshi-tyo.github.io/2019/09/22/Java%20import%E5%8D%95%E7%B1%BB%E5%BC%95%E5%85%A5%E4%B8%8E%E5%8C%85%E5%BC%95%E5%85%A5%E7%9A%84%E5%8C%BA%E5%88%AB/),实际编程中更推荐使用单类型导入。
+
+**static**关键字
+
+当声明一个事物是static时，就意味着这个域或者方法不会与包含它的那个类的任何对象实例关联在一起，即可以直接通过一个类来访问它的static域和static方法（当然也可以通过对象访问），例如:
+
+```java
+class A{
+	public static int x = 1;
+}
+// 以下两种方法访问静态的x都是可以的
+int i = A.x;
+A a = new A();
+int j = a.x;
+```
+
+
 
