@@ -25,7 +25,7 @@ protected String[] getInlinedProperties(MergedContextConfiguration config) {
 }
 ```
 
-
+<!--more-->
 
 2、使用@ConfigurationProperties方式读取yml文件中的属性时，prefix的值不能有大写，如：prefix = "myProps"， 这样写会报错，所以yml文件中的key一定要是小写。
 

@@ -17,7 +17,7 @@ String s；
 ```
 
 如果这时向s发送一个消息，就会返回一个运行时错误。因为s实际没有与对象关联。因此，一种安全的做法是创建一个引用的同时进行初始化。
-
+<!--more-->
 ## 2.2 必须由你创建所有对象
 
 一旦创建一个引用，就希望它能与一个新的对象相关联，通常用new操作符实现这一目的，new关键字的意思是“给我一个新对象”。例如
@@ -151,5 +151,65 @@ A a = new A();
 int j = a.x;
 ```
 
+## 2.7 你的第一个Java程序
 
+```java
+public class HelloWorld{
+	public static void main(Strng[] args){
+        System.out.println("Hello World!");
+    }
+}
+```
+
+java.lang这个类库是默认导入到每个java文件中的。System类就是这个类库里的，所以使用它不需要导入，out是System的一个静态对象，所以可以直接通过类名引用。
+
+一个java文件可以包含一个或多个类，但必须有一个类的类名和文件名相同。
+
+main方法是程序的入口，但并不是每个类都有main方法。main方法的参数args是一个字符串数组，作用是从命令行接收参数，它是必须的，即使在很多时候都没有用到。
+
+## 2.8 注释和嵌入式文档
+
+Java有两种注释风格：多行注释与单行注释。
+
+多行注释如下：
+
+```java
+/* This is a comment that
+  continues across lines */
+```
+
+实际很多人习惯这样写：
+
+```java
+/* This is a comment that
+ * continues across lines
+ */
+```
+
+单行注释如下：
+
+```java
+// this is a one-line comment
+```
+
+javadoc是一个注释提取工具，它能把代码里的注释提取出来单独形成一个文档（实际输出的是一个html文件）。
+
+javadoc命令只能在 “ /\*\* ” 注释中出现，结束于 “ */ ” 。使用javadoc的方式主要有两种：嵌入html，或使用“文档标签”（以@开头的命令）。
+
+javadoc只能为public和protected成员进行文档注释。
+
+javadoc的具体使用可以看这篇文章https://blog.csdn.net/vbirdbest/article/details/80296136
+
+## 2.9 编码风格
+
+使用驼峰风格，类名每个单词首字母大写，其他内容（变量，方法名，对象引用）第一个单词首字母小写，例：
+
+```java
+class AllTheColorOfTheRainbow{
+	int anIntegerRepresentingColors;
+	void changeTheHueOfTheColor(int newHue){
+		// ...
+	}
+}
+```
 
