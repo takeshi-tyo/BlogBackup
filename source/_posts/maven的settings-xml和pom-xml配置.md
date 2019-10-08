@@ -1,7 +1,7 @@
 ---
 title: maven的settings.xml和pom.xml配置
 date: 2019-09-25 10:39:10
-tags:
+tags: maven
 ---
 
   Maven的下载安装非常简单，直接到官网下载解压即可。配置环境变量不是必须的。顺便一提，Eclipse和Idea都自带了maven，所以你甚至不用下载maven。

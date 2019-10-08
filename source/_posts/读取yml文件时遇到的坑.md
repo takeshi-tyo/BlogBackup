@@ -1,5 +1,6 @@
 ---
 title: 读取yml文件时遇到的坑
+tags: Springboot
 ---
 
 1、在测试类里使用@Value("${server.port}")获取端口返回的值是-1，解决方法：在@SpringBootTest注解后面加上如下属性：
