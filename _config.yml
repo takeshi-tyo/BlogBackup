@@ -81,7 +81,7 @@ theme: yilia
 deploy:
   type: git
   repo: 
-    # github: git@github.com:takeshi-tyo/takeshi-tyo.github.io.git
+    github: git@github.com:takeshi-tyo/takeshi-tyo.github.io.git
     coding: git@e.coding.net:takeshi/takeshi.coding.me.git
   branch: master
 
