@@ -10,6 +10,8 @@ tags: Java
 
 ![图像加载失败](4.png)
 
+<!--more-->
+
 ```java
 public class Main
 {
