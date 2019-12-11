@@ -216,3 +216,4 @@ class Dog extends Pet{}
 
 4、反射：运行时的类信息
 
+Class累与java.lang.reflect类库一起对反射的概念进行了支持，该类库包含了。。。TODO
